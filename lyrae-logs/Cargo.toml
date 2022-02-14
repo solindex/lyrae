@@ -1,0 +1,21 @@
+[package]
+name = "lyrae-logs"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "lyrae_logs"
+doctest = false
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+devnet = []
+default = []
+
+[dependencies]
+anchor-lang = "0.20.1"
